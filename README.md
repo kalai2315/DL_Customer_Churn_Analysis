@@ -1,114 +1,104 @@
-# DL_Customer_Churn_Analysis
+# Customer Churn Prediction using Keras
 
-# 📊 Customer Churn Prediction using Keras
+## Project Overview
 
-## 🧠 Project Overview
-
-This project aims to **predict customer churn** for a telecom company named **Leo** using **Binary Classification** with **Keras (TensorFlow backend)**. Understanding why customers leave and predicting who is likely to churn can help the company take proactive steps to improve customer retention.
+This project focuses on predicting customer churn for a telecom company named **Leo** using a **binary classification model** built with **Keras**. The goal is to proactively identify customers who are likely to leave the service, allowing the business to take retention actions.
 
 ---
 
-## 📝 Problem Statement
+## Problem Statement
 
-Leo, a telecom service provider, is facing a **high churn rate**. Your job as a Data Scientist is to:
-- Analyze customer behavior,
-- Identify key drivers of churn,
-- Build a predictive model to classify whether a customer is likely to churn or not.
-
----
-
-## 🧰 Technologies Used
-
-- **Programming Language**: Python
-- **Deep Learning Framework**: Keras (TensorFlow backend)
-- **Libraries**: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn
+The telecom company, Leo, has been losing customers to competitors. As a Data Scientist, your role is to:
+- Analyze the customer data,
+- Identify key patterns and features leading to churn,
+- Build a machine learning model to predict whether a customer will churn.
 
 ---
 
-## 🧪 Model Details
+## Technologies and Tools
 
-- **Model Type**: Binary Classification
-- **Architecture**: Feedforward Neural Network (Sequential API)
-- **Activation Functions**: ReLU, Sigmoid
-- **Loss Function**: Binary Crossentropy
-- **Optimizer**: Adam
-- **Evaluation Metric**: Accuracy
-
----
-
-## 📈 Workflow
-
-1. **Data Preprocessing**
-   - Handle missing values
-   - Encode categorical variables
-   - Feature scaling (Standardization/Normalization)
-
-2. **EDA (Exploratory Data Analysis)**
-   - Visualize churn distribution
-   - Identify correlations and trends in features
-
-3. **Model Building**
-   - Define Neural Network architecture using Keras
-   - Compile and train the model
-   - Evaluate performance on test data
-
-4. **Evaluation**
-   - Confusion Matrix
-   - Accuracy Score
-   - Precision, Recall, F1-score
-   - ROC-AUC Curve
+- **Language:** Python  
+- **Libraries & Frameworks:**  
+  - Pandas, NumPy  
+  - Matplotlib, Seaborn  
+  - Scikit-learn  
+  - TensorFlow/Keras  
+- **Model Evaluation:** Accuracy, Confusion Matrix, Classification Report, ROC-AUC
 
 ---
 
-## 🗂️ Dataset
+## Dataset Description
 
-The dataset contains customer data such as:
-- `gender`, `senior_citizen`, `tenure`, `monthly_charges`, etc.
-- The target variable is: `Churn` (Yes/No)
-
----
-
-## 🔍 Insights
-
-- Customers with high monthly charges and short tenure tend to churn more.
-- Long-term customers are less likely to churn.
-- Internet service, customer service calls, and contract type are influential features.
+The dataset includes various customer-related features such as:
+- Demographics (gender, senior citizen status)
+- Services signed up for (internet service, phone service, etc.)
+- Account information (contract type, tenure, monthly charges)
+- Target variable: `Churn` (Yes/No)
 
 ---
 
-## 📌 Results
+## Project Steps
 
-- **Training Accuracy**: ~79%
-- **Validation Accuracy**: ~78%
-- ROC-AUC score shows good discrimination capability.
+### 1. Data Preprocessing
+- Handled missing values and irrelevant columns
+- Encoded categorical variables
+- Performed feature scaling
 
----
+### 2. Exploratory Data Analysis (EDA)
+- Churn distribution
+- Key features contributing to churn
+- Correlation analysis and visual insights
 
-## 💡 Business Impact
+### 3. Model Building
+- Created a deep learning model using **Keras Sequential API**
+- Used `ReLU` for hidden layers and `Sigmoid` for output layer
+- Compiled with `binary_crossentropy` loss and `adam` optimizer
 
-By using this predictive model, Leo Telecom can:
-- Identify at-risk customers early,
-- Launch targeted retention strategies,
-- Reduce churn rate and improve customer lifetime value.
-
----
-
-## 📎 Future Work
-
-- Implement Hyperparameter tuning (GridSearchCV, RandomSearch)
-- Try other algorithms (XGBoost, Random Forest)
-- Deploy the model using Flask/Streamlit
-
----
-
-## 🙌 Acknowledgements
-
-Thanks to the open-source community and the Keras & TensorFlow teams for the awesome tools!
+### 4. Model Evaluation
+- Accuracy on test set
+- Confusion Matrix
+- Precision, Recall, F1-score
+- ROC-AUC score and curve
 
 ---
 
-## 📬 Contact
+## Key Findings
+
+- Customers with short tenure and high monthly charges are more likely to churn.
+- Long-term contracts and paperless billing show significant influence on churn probability.
+- Internet service type and customer support experience are strong churn indicators.
+
+---
+
+## Results
+
+- Model Accuracy: ~79%
+- ROC-AUC Score: High model discrimination ability
+- Balanced performance across classes in classification report
+
+---
+
+## Business Use Case
+
+By deploying this model, Leo can:
+- Predict churn probability for each customer
+- Implement targeted marketing campaigns
+- Optimize customer service and retention strategies
+
+---
+
+## Future Improvements
+
+- Use hyperparameter tuning (GridSearchCV or RandomSearch)
+- Try ensemble models like Random Forest and XGBoost
+- Deploy using Streamlit or Flask for real-time predictions
+
+---
+
+## Author
 
 **Kalaiselvi Maheshkumar**  
-Data Scientist | [LinkedIn](https://linkedin.com/in/kalaiselvi-ganesan-6313a32a2) | [GitHub](https://github.com/kalai2315)
+Data Scientist  
+LinkedIn: [kalaiselvi-ganesan-6313a32a2](https://linkedin.com/in/kalaiselvi-ganesan-6313a32a2)  
+GitHub: [kalai2315](https://github.com/kalai2315)
 
